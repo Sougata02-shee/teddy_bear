@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            background-color: white;
+        }
+        .face{
+            position: relative;
+            height: 200px;
+            width: 180px;
+            border-radius: 50%;
+            background-color: pink;
+        }
+        .ear1{
+            position: absolute;
+            background-color: rgb(211, 21, 21);
+            height: 80px;
+            width: 60px;
+            border-radius: 80%;
+            top: -40px;
+            left: -20px;
+        }
+        .ear2{
+            position: absolute;
+            background-color: rgb(211, 21, 21);
+            height: 80px;
+            width: 60px;
+            border-radius: 80%;
+            top: -40px;
+            right: -20px;
+        }
+        .eye1{
+            position: absolute;
+            height: 15px;
+            width: 15px;
+            background-color: black;
+            border-radius: 50%;
+            top: 80px;
+            left: 45px;
+        }
+        .eye2{
+            position: absolute;
+            height: 15px;
+            width: 15px;
+            background-color: black;
+            border-radius: 50%;
+            top: 80px;
+            right: 45px;
+        }
+        .nose{
+            position:absolute ;
+            height: 28px;
+            width: 18px;
+            border-radius: 60%;
+            background-color: black;
+            bottom: 70px;
+            right: 80px;
+        }
+        .mouth{
+            position: absolute;
+            width: 40px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: black;
+            bottom: 45px;
+            right: 70px;
+        }
+        .body{
+            position: relative;
+            height: 500px;
+            width: 400px;
+            background-color: rgb(211, 21, 21);
+            border-radius: 50%;
+            top: -10px;
+            left: -100px;
+        }
+        .hand1{
+            position: absolute;
+            height: 150px;
+            width: 100px;
+            background-color: rgb(211, 21, 21);
+            border-radius: 50%;
+            top: 80px;
+            left: -40px;
+        }
+        .hand2{
+            position: absolute;
+            height: 150px;
+            width: 100px;
+            background-color: rgb(211, 21, 21);
+            border-radius: 50%;
+            top: 80px;
+            right: -40px;
+        }
+        .leg1{
+            position: absolute;
+            height: 200px;
+            width: 150px;
+            background-color: rgb(211, 21, 21);
+            border-radius: 80%;
+            bottom: 0px;
+            left: -50px;
+        }
+        .leg2{
+            position: absolute;
+            height: 200px;
+            width: 150px;
+            background-color: rgb(211, 21, 21);
+            border-radius: 80%;
+            bottom: 0px;
+            right: -50px;
+        }
+        .p{
+            position: absolute;
+            border-radius: 50%;
+            height: 5px;
+            width: 5px;
+            background-color: white;
+            top: 8px;
+            left: 5px;
+        }
+        .q{
+            position: absolute;
+            height: 15px;
+            width: 15px;
+            background-color: rgb(211, 21, 21);
+            border-radius: 50%;
+            animation: movee;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes movee{
+            from{
+                top: 0px ;
+            }
+            to{
+                bottom: 15px;
+            }
+        }
+        .sto{
+            position: absolute;
+            height: 400px;
+            width: 300px;
+            background-color: pink;
+            border-radius: 50%;
+            top: 30px;
+            left: 50px;
+        }
+        .E{
+            position: absolute;
+            height: 80px;
+            width: 60px;
+            background-color: pink;
+            border-radius: 50%;
+        }
+        .E.er{
+            top: 10px;
+            right: -1px;
+        }
+        .E.er1{
+            top: 10px;
+            left: -1px;
+        }
+        .h1{
+            position: absolute;
+            height:130px;
+            width: 90px;
+            background-color: pink;
+            border-radius: 50%;
+            top: 20px;
+            left: 10px;
+        }
+        .h2{
+            position: absolute;
+            height:130px;
+            width: 90px;
+            background-color: pink;
+            border-radius: 50%;
+            top: 20px;
+            right: 10px;
+        }
+        .l1{
+            position: absolute;
+            height: 180px;
+            width: 140px;
+            background-color: pink;
+            border-radius: 50%;
+            top: 5px;
+            left: 15px;
+        }
+        .l2{
+            position: absolute;
+            height: 185px;
+            width: 140px;
+            background-color: pink;
+            border-radius: 50%;
+            top: 5px;
+            right: 15px;
+        }
+        .cl{
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            /* background-color: red; */
+            border-radius: 50%;
+            background-image: url(https://static.vecteezy.com/system/resources/thumbnails/017/745/757/small/heart-love-emoji-3d-png.png);
+            bottom: 90px;
+            right:50px
+        }
+        
+
+      
+
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="face">
+            <div class="ear1">
+                <div class="E er"></div>
+            </div>
+            <div class="ear2">
+                <div class="E er1"></div>
+            </div>
+            <div class="eye1">
+                <div class="p"></div>
+                <div class="q"></div>
+            </div>
+            <div class="eye2">
+                <div class="p"></div>
+                <div class="q"></div>
+            </div>
+            <div class="nose"></div>
+            <div class="mouth"></div>
+        </div>
+        <div class="body">
+            <div class="sto">
+                <div class="cl"></div>
+            </div>
+            <div class="hand1">
+                <div class="h1"></div>
+            </div>
+            <div class="hand2">
+                <div class="h2"></div>
+            </div>
+            <div class="leg1">
+                <div class="l1"></div>
+            </div>
+            <div class="leg2">
+                <div class="l2"></div>
+            </div>
+        </div>
+        <div></div>
+
+    </div>
+</body>
+</html>
